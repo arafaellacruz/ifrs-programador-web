@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Formulários</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h2>Formulários</h2>
+    <form method="post" action="recebeForms.php">
+      <fieldset>
+        <legend>Dados pessoais:</legend>
+        Nome:
+        <input
+          type="text"
+          name="name"
+          placeholder="Informe seu nome"
+          required
+        /><br />
+        Email:
+        <input type="email" name="email" placeholder="mail@email.com" /><br />
+        Senha:
+        <input type="password" name="senha" placeholder="****" /><br />
+        CPF:
+        <input
+          type="text"
+          name="cpf"
+          placeholder="000.000.000-00"
+          maxlength="11"
+        /><br />
+        <label for="endereço"> Endereço:</label>
+        <textarea id="endereço" name="endereço">
+Rua fênix, São José dos Campos, SP.</textarea
+        >
+        <br />
+        Data de nascimento:<br />
+        <input type="date" name="birthday" />
+      </fieldset>
+
+      Qual aparelho você possui?<br />
+      <input type="checkbox" name="notebook" value="1" />Notebook<br />
+      <input type="checkbox" name="celular" value="2" checked />Celular<br />
+      <input type="checkbox" name="tablet" value="3" />Tablet<br />
+      <br />
+      Quais cursos você ja fez?<br />
+      <input type="radio" name="cursoFeito" value="1" />HTML<br />
+      <input type="radio" name="cursoFeito" value="2" />CSS<br />
+      <input type="radio" name="cursoFeito" value="3" />JavaScript<br />
+      <br />
+      Você prefere: <br />
+      <input type="radio" name="so" value="1" checked />iOS<br />
+      <input type="radio" name="so" value="2" />Android<br />
+      <br />
+      Em qual estado você mora?<br />
+      <select name="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+    </form>
+    <br />
+    <button type="submit">Enviar</button>
+  </body>
+</html>

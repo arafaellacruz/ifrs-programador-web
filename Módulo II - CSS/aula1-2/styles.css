@@ -1,0 +1,33 @@
+h1 {
+  color: rgba(153, 68, 170, 0.867);
+  font-family: sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-shadow: gray 5px 6px 2px;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 12pt;
+  word-spacing: 0.3em;
+  text-align: justify;
+  text-indent: 30pt;
+  white-space: nowrap;
+}
+
+.inferior {
+  text-decoration: underline;
+}
+
+.superior {
+  text-decoration: overline;
+}
+
+.central {
+  text-decoration: line-through;
+}
+
+.pisca {
+  text-decoration: blink;
+}
